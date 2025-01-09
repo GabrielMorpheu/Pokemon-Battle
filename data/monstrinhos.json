@@ -1,0 +1,242 @@
+[
+    {
+        "nome": "Pyroblaze",
+        "tipo": "Fogo",
+        "hp": 60,
+        "ataque-fisico": 10,
+        "ataque-especial": 25,
+        "defesa-fisica": 12,
+        "defesa-especial": 20,
+        "velocidade": 8
+    },
+    {
+        "nome": "Ignisaur",
+        "tipo": "Fogo",
+        "hp": 70,
+        "ataque-fisico": 25,
+        "ataque-especial": 10,
+        "defesa-fisica": 20,
+        "defesa-especial": 12,
+        "velocidade": 8
+    },
+    {
+        "nome": "Emberwing",
+        "tipo": "Fogo",
+        "hp": 65,
+        "ataque-fisico": 18,
+        "ataque-especial": 18,
+        "defesa-fisica": 15,
+        "defesa-especial": 15,
+        "velocidade": 15
+    },
+    {
+    "nome": "Aquamarine",
+    "tipo": "Água",
+    "hp": 65,
+    "ataque-fisico": 12,
+    "ataque-especial": 20,
+    "defesa-fisica": 15,
+    "defesa-especial": 18,
+    "velocidade": 15
+    },
+    {
+        "nome": "Riptide",
+        "tipo": "Água",
+        "hp": 70,
+        "ataque-fisico": 20,
+        "ataque-especial": 12,
+        "defesa-fisica": 18,
+        "defesa-especial": 15,
+        "velocidade": 10
+    },
+    {
+        "nome": "Hydroveil",
+        "tipo": "Água",
+        "hp": 60,
+        "ataque-fisico": 15,
+        "ataque-especial": 15,
+        "defesa-fisica": 15,
+        "defesa-especial": 15,
+        "velocidade": 12
+    },
+    {
+    "nome": "Stoneaxe",
+    "tipo": "Terra",
+    "hp": 70,
+    "ataque-fisico": 20,
+    "ataque-especial": 10,
+    "defesa-fisica": 18,
+    "defesa-especial": 15,
+    "velocidade": 8
+    },
+    {
+        "nome": "Sandstorm",
+        "tipo": "Terra",
+        "hp": 65,
+        "ataque-fisico": 12,
+        "ataque-especial": 20,
+        "defesa-fisica": 15,
+        "defesa-especial": 18,
+        "velocidade": 15
+    },
+    {
+        "nome": "Groundmole",
+        "tipo": "Terra",
+        "hp": 60,
+        "ataque-fisico": 15,
+        "ataque-especial": 15,
+        "defesa-fisica": 15,
+        "defesa-especial": 15,
+        "velocidade": 12
+    },
+    {
+    "nome": "Voltstrike",
+    "tipo": "Elétrico",
+    "hp": 60,
+    "ataque-fisico": 12,
+    "ataque-especial": 20,
+    "defesa-fisica": 15,
+    "defesa-especial": 18,
+    "velocidade": 15
+    },
+    {
+        "nome": "Thunderfist",
+        "tipo": "Elétrico",
+        "hp": 70,
+        "ataque-fisico": 20,
+        "ataque-especial": 12,
+        "defesa-fisica": 18,
+        "defesa-especial": 15,
+        "velocidade": 10
+    },
+    {
+        "nome": "Sparktail",
+        "tipo": "Elétrico",
+        "hp": 65,
+        "ataque-fisico": 15,
+        "ataque-especial": 15,
+        "defesa-fisica": 15,
+        "defesa-especial": 15,
+        "velocidade": 12
+    },
+    {
+    "nome": "Leafblade",
+    "tipo": "Planta",
+    "hp": 70,
+    "ataque-fisico": 20,
+    "ataque-especial": 10,
+    "defesa-fisica": 18,
+    "defesa-especial": 15,
+    "velocidade": 8
+    },
+    {
+        "nome": "Sunbloom",
+        "tipo": "Planta",
+        "hp": 65,
+        "ataque-fisico": 12,
+        "ataque-especial": 20,
+        "defesa-fisica": 15,
+        "defesa-especial": 18,
+        "velocidade": 15
+    },
+    {
+        "nome": "Vinewhip",
+        "tipo": "Planta",
+        "hp": 60,
+        "ataque-fisico": 15,
+        "ataque-especial": 15,
+        "defesa-fisica": 15,
+        "defesa-especial": 15,
+        "velocidade": 12
+    },
+    {
+    "nome": "IceShard",
+    "tipo": "Gelo",
+    "hp": 70,
+    "ataque-fisico": 20,
+    "ataque-especial": 10,
+    "defesa-fisica": 18,
+    "defesa-especial": 15,
+    "velocidade": 8
+    },
+    {
+        "nome": "Snowstorm",
+        "tipo": "Gelo",
+        "hp": 65,
+        "ataque-fisico": 12,
+        "ataque-especial": 20,
+        "defesa-fisica": 15,
+        "defesa-especial": 18,
+        "velocidade": 15
+    },
+    {
+        "nome": "Frostbite",
+        "tipo": "Gelo",
+        "hp": 60,
+        "ataque-fisico": 15,
+        "ataque-especial": 15,
+        "defesa-fisica": 15,
+        "defesa-especial": 15,
+        "velocidade": 12
+    },
+    {
+    "nome": "Shadowclaw",
+    "tipo": "Sombrio",
+    "hp": 70,
+    "ataque-fisico": 20,
+    "ataque-especial": 10,
+    "defesa-fisica": 18,
+    "defesa-especial": 15,
+    "velocidade": 8
+    },
+    {
+        "nome": "Nightmare",
+        "tipo": "Sombrio",
+        "hp": 65,
+        "ataque-fisico": 12,
+        "ataque-especial": 20,
+        "defesa-fisica": 15,
+        "defesa-especial": 18,
+        "velocidade": 15
+    },
+    {
+        "nome": "Phantom",
+        "tipo": "Sombrio",
+        "hp": 60,
+        "ataque-fisico": 15,
+        "ataque-especial": 15,
+        "defesa-fisica": 15,
+        "defesa-especial": 15,
+        "velocidade": 12
+    },
+    {
+    "nome": "Mindflayer",
+    "tipo": "Psíquico",
+    "hp": 60,
+    "ataque-fisico": 10,
+    "ataque-especial": 20,
+    "defesa-fisica": 15,
+    "defesa-especial": 18,
+    "velocidade": 12
+    },
+    {
+        "nome": "Telepath",
+        "tipo": "Psíquico",
+        "hp": 65,
+        "ataque-fisico": 12,
+        "ataque-especial": 20,
+        "defesa-fisica": 15,
+        "defesa-especial": 18,
+        "velocidade": 15
+    },
+    {
+        "nome": "Psychicling",
+        "tipo": "Psíquico",
+        "hp": 60,
+        "ataque-fisico": 15,
+        "ataque-especial": 15,
+        "defesa-fisica": 15,
+        "defesa-especial": 15,
+        "velocidade": 12
+    }
+]

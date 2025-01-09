@@ -1,0 +1,567 @@
+[
+    {
+        "id": "1",
+        "id_jogador": "1",
+        "nome": "NOVO",
+        "monstrinhos": [
+            [
+                [
+                    "Pyroblaze",
+                    "Fogo"
+                ],
+                [
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas"
+                ]
+            ],
+            [
+                [
+                    "Telepath",
+                    "Psíquico"
+                ],
+                [
+                    "Raio Psíquico",
+                    "Raio Psíquico",
+                    "Raio Psíquico",
+                    "Raio Psíquico"
+                ]
+            ],
+            [
+                [
+                    "Pyroblaze",
+                    "Fogo"
+                ],
+                [
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas"
+                ]
+            ],
+            [
+                [
+                    "Pyroblaze",
+                    "Fogo"
+                ],
+                [
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas"
+                ]
+            ],
+            [
+                [
+                    "Pyroblaze",
+                    "Fogo"
+                ],
+                [
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas"
+                ]
+            ],
+            [
+                [
+                    "Pyroblaze",
+                    "Fogo"
+                ],
+                [
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas"
+                ]
+            ]
+        ]
+    },
+    {
+        "id": "2",
+        "id_jogador": "1",
+        "nome": "NOVO",
+        "monstrinhos": [
+            [
+                [
+                    "Pyroblaze",
+                    "Fogo"
+                ],
+                [
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas"
+                ]
+            ],
+            [
+                [
+                    "Pyroblaze",
+                    "Fogo"
+                ],
+                [
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas"
+                ]
+            ],
+            [
+                [
+                    "Pyroblaze",
+                    "Fogo"
+                ],
+                [
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas"
+                ]
+            ],
+            [
+                [
+                    "Pyroblaze",
+                    "Fogo"
+                ],
+                [
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas"
+                ]
+            ],
+            [
+                [
+                    "Pyroblaze",
+                    "Fogo"
+                ],
+                [
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas"
+                ]
+            ],
+            [
+                [
+                    "Pyroblaze",
+                    "Fogo"
+                ],
+                [
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas"
+                ]
+            ]
+        ]
+    },
+    {
+        "id": "3",
+        "id_jogador": "1",
+        "nome": "TESTE",
+        "monstrinhos": [
+            [
+                [
+                    "Vinewhip",
+                    "Planta"
+                ],
+                [
+                    "Cura",
+                    "Raio Solar",
+                    "Chicote de Cipó",
+                    "Gigantossuco"
+                ]
+            ],
+            [
+                [
+                    "Telepath",
+                    "Psíquico"
+                ],
+                [
+                    "Confusão",
+                    "Raio Psíquico",
+                    "Raio Psíquico",
+                    "Raio Psíquico"
+                ]
+            ],
+            [
+                [
+                    "Groundmole",
+                    "Terra"
+                ],
+                [
+                    "Terremoto",
+                    "Garra de Metal",
+                    "Soco de Pedra",
+                    "Areia Movediça"
+                ]
+            ],
+            [
+                [
+                    "Sparktail",
+                    "Elétrico"
+                ],
+                [
+                    "Trovão",
+                    "Descarga Elétrica",
+                    "Campo Elétrico",
+                    "Choque"
+                ]
+            ],
+            [
+                [
+                    "Emberwing",
+                    "Fogo"
+                ],
+                [
+                    "Lança-Chamas",
+                    "Brasas",
+                    "Explosão",
+                    "Lança-Chamas"
+                ]
+            ],
+            [
+                [
+                    "Pyroblaze",
+                    "Fogo"
+                ],
+                [
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas"
+                ]
+            ]
+        ]
+    },
+    {
+        "id": "4",
+        "id_jogador": "1",
+        "nome": "TESTE_DOIS",
+        "monstrinhos": [
+            [
+                [
+                    "Pyroblaze",
+                    "Fogo"
+                ],
+                [
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas"
+                ]
+            ],
+            [
+                [
+                    "Pyroblaze",
+                    "Fogo"
+                ],
+                [
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas"
+                ]
+            ],
+            [
+                [
+                    "Pyroblaze",
+                    "Fogo"
+                ],
+                [
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas"
+                ]
+            ],
+            [
+                [
+                    "Pyroblaze",
+                    "Fogo"
+                ],
+                [
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas"
+                ]
+            ],
+            [
+                [
+                    "Pyroblaze",
+                    "Fogo"
+                ],
+                [
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas"
+                ]
+            ],
+            [
+                [
+                    "Pyroblaze",
+                    "Fogo"
+                ],
+                [
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas"
+                ]
+            ]
+        ]
+    },
+    {
+        "id": "5",
+        "id_jogador": "1",
+        "nome": "POURRA",
+        "monstrinhos": [
+            [
+                [
+                    "Psychicling",
+                    "Psíquico"
+                ],
+                [
+                    "Raio Psíquico",
+                    "Raio Psíquico",
+                    "Raio Psíquico",
+                    "Raio Psíquico"
+                ]
+            ],
+            [
+                [
+                    "Psychicling",
+                    "Psíquico"
+                ],
+                [
+                    "Raio Psíquico",
+                    "Raio Psíquico",
+                    "Raio Psíquico",
+                    "Raio Psíquico"
+                ]
+            ],
+            [
+                [
+                    "Psychicling",
+                    "Psíquico"
+                ],
+                [
+                    "Raio Psíquico",
+                    "Raio Psíquico",
+                    "Raio Psíquico",
+                    "Raio Psíquico"
+                ]
+            ],
+            [
+                [
+                    "Psychicling",
+                    "Psíquico"
+                ],
+                [
+                    "Raio Psíquico",
+                    "Raio Psíquico",
+                    "Raio Psíquico",
+                    "Raio Psíquico"
+                ]
+            ],
+            [
+                [
+                    "Psychicling",
+                    "Psíquico"
+                ],
+                [
+                    "Raio Psíquico",
+                    "Raio Psíquico",
+                    "Raio Psíquico",
+                    "Raio Psíquico"
+                ]
+            ],
+            [
+                [
+                    "Psychicling",
+                    "Psíquico"
+                ],
+                [
+                    "Raio Psíquico",
+                    "Raio Psíquico",
+                    "Raio Psíquico",
+                    "Raio Psíquico"
+                ]
+            ]
+        ]
+    },
+    {
+        "id": "1",
+        "id_jogador": "2",
+        "nome": "TESTE123",
+        "monstrinhos": [
+            [
+                [
+                    "Sunbloom",
+                    "Planta"
+                ],
+                [
+                    "Cura",
+                    "Raio Solar",
+                    "Chicote de Cipó",
+                    "Gigantossuco"
+                ]
+            ],
+            [
+                [
+                    "Telepath",
+                    "Psíquico"
+                ],
+                [
+                    "Confusão",
+                    "Raio Psíquico",
+                    "Raio Psíquico",
+                    "Raio Psíquico"
+                ]
+            ],
+            [
+                [
+                    "Groundmole",
+                    "Terra"
+                ],
+                [
+                    "Terremoto",
+                    "Garra de Metal",
+                    "Soco de Pedra",
+                    "Areia Movediça"
+                ]
+            ],
+            [
+                [
+                    "Telepath",
+                    "Psíquico"
+                ],
+                [
+                    "Confusão",
+                    "Raio Psíquico",
+                    "Raio Psíquico",
+                    "Raio Psíquico"
+                ]
+            ],
+            [
+                [
+                    "Emberwing",
+                    "Fogo"
+                ],
+                [
+                    "Lança-Chamas",
+                    "Brasas",
+                    "Explosão",
+                    "Lança-Chamas"
+                ]
+            ],
+            [
+                [
+                    "Pyroblaze",
+                    "Fogo"
+                ],
+                [
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas",
+                    "Lança-Chamas"
+                ]
+            ]
+        ]
+    },
+    {
+        "id": "6",
+        "id_jogador": "1",
+        "nome": "TESTE",
+        "monstrinhos": [
+             [
+                [
+                    "Groundmole",
+                    "Terra"
+                ],
+                [
+                    "Terremoto",
+                    "Garra de Metal",
+                    "Soco de Pedra",
+                    "Areia Movediça"
+                ]
+            ],
+             [
+                [
+                    "Groundmole",
+                    "Terra"
+                ],
+                [
+                    "Terremoto",
+                    "Garra de Metal",
+                    "Soco de Pedra",
+                    "Areia Movediça"
+                ]
+            ],
+            [
+                [
+                    "Groundmole",
+                    "Terra"
+                ],
+                [
+                    "Terremoto",
+                    "Garra de Metal",
+                    "Soco de Pedra",
+                    "Areia Movediça"
+                ]
+            ],
+             [
+                [
+                    "Groundmole",
+                    "Terra"
+                ],
+                [
+                    "Terremoto",
+                    "Garra de Metal",
+                    "Soco de Pedra",
+                    "Areia Movediça"
+                ]
+            ],
+            [
+                [
+                    "Groundmole",
+                    "Terra"
+                ],
+                [
+                    "Terremoto",
+                    "Garra de Metal",
+                    "Soco de Pedra",
+                    "Areia Movediça"
+                ]
+            ],
+             [
+                [
+                    "Groundmole",
+                    "Terra"
+                ],
+                [
+                    "Terremoto",
+                    "Garra de Metal",
+                    "Soco de Pedra",
+                    "Areia Movediça"
+                ]
+            ],
+             [
+                [
+                    "Groundmole",
+                    "Terra"
+                ],
+                [
+                    "Terremoto",
+                    "Garra de Metal",
+                    "Soco de Pedra",
+                    "Areia Movediça"
+                ]
+            ]
+        ]
+    }
+]
