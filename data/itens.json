@@ -1,0 +1,20 @@
+[
+    {
+        "nome": "Poção Pequena",
+        "tipo": "vida",
+        "efeito": "8",
+        "quantidade": 8
+    },
+    {
+        "nome": "Poção Média",
+        "tipo": "vida",
+        "efeito": "18",
+        "quantidade": 4
+    },
+    {
+        "nome": "Poção Grande",
+        "tipo": "vida",
+        "efeito": "28",
+        "quantidade": 2
+    }
+]

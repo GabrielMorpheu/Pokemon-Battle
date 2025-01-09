@@ -1,0 +1,31 @@
+[
+    {
+        "id": "1",
+        "nome": "Gabriel",
+        "senha": "$2b$12$OUcChlOHUcvVs3rpOatvru/epY7Eg6tbwFt2ZSPi1nKciygfhkVZC",
+        "time_id": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "mochila_id": [
+            1,
+            2,
+            3
+        ]
+    },
+    {
+        "id": "2",
+        "nome": "TESTE123",
+        "senha": "$2b$12$vWTpIiLahIwEh74WljpJYOdjrGfSCIpW7Er79gZZNyCDiSW5n.1tW",
+        "time_id": [
+            1
+        ],
+        "mochila_id": [
+            1
+        ]
+    }
+]

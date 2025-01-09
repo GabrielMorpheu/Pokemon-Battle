@@ -1,0 +1,434 @@
+[
+    {
+        "nome": "Lança-Chamas",
+        "tipo": "Fogo",
+        "poder": 40,
+        "pp": 30,
+        "tipo_ataque": "físico",
+        "descricao": "",
+        "prioridade": 1
+    },
+    {
+        "nome": "Brasas",
+        "tipo": "Fogo",
+        "poder": 15,
+        "pp": 20,
+        "tipo_ataque": "especial",
+        "descricao": "",
+        "prioridade": 1
+    },
+    {
+        "nome": "Explosão",
+        "tipo": "Fogo",
+        "poder": 80,
+        "pp": 5,
+        "tipo_ataque": "especial",
+        "descricao": "",
+        "prioridade": 1
+    },
+    {
+        "nome": "Rajada de Fogo",
+        "tipo": "Fogo",
+        "poder": 55,
+        "pp": 25,
+        "tipo_ataque": "especial",
+        "descricao": "",
+        "prioridade": 1
+    },
+    {
+        "nome": "Inferno",
+        "tipo": "Fogo",
+        "poder": 100,
+        "pp": 5,
+        "tipo_ataque": "especial",
+        "descricao": "",
+        "prioridade": 1
+    },
+    {
+        "nome": "Parede de Fogo",
+        "tipo": "Fogo",
+        "poder": 30,
+        "pp": 20,
+        "tipo_ataque": "especial",
+        "descricao": "",
+        "prioridade": 1
+    },
+    {
+        "nome": "Hidro Bomba",
+        "tipo": "Água",
+        "poder": 60,
+        "pp": 20,
+        "tipo_ataque": "especial",
+        "descricao": "",
+        "prioridade": 1
+    },
+    {
+        "nome": "Surf",
+        "tipo": "Água",
+        "poder": 90,
+        "pp": 15,
+        "tipo_ataque": "especial",
+        "descricao": "",
+        "prioridade": 1
+    },
+    {
+        "nome": "Cascata",
+        "tipo": "Água",
+        "poder": 80,
+        "pp": 20,
+        "tipo_ataque": "físico",
+        "descricao": "",
+        "prioridade": 1
+    },
+    {
+        "nome": "Hidropump",
+        "tipo": "Água",
+        "poder": 110,
+        "pp": 5,
+        "tipo_ataque": "especial",
+        "descricao": "",
+        "prioridade": 1
+    },
+    {
+        "nome": "Gorro d'Água",
+        "tipo": "Água",
+        "poder": "-",
+        "pp": 20,
+        "tipo_ataque": "status",
+        "descricao": "Aumenta o ataque-físico",
+        "prioridade": 1
+    },
+    {
+        "nome": "Torrente",
+        "tipo": "Água",
+        "poder": "-",
+        "pp": 20,
+        "tipo_ataque": "status",
+        "descricao": "Aumenta ataque-especial",
+        "prioridade": 1
+    },
+    {
+        "nome": "Terremoto",
+        "tipo": "Terra",
+        "poder": 100,
+        "pp": 10,
+        "tipo_ataque": "físico",
+        "descricao": "",
+        "prioridade": 1
+    },
+    {
+        "nome": "Garra de Metal",
+        "tipo": "Terra",
+        "poder": 80,
+        "pp": 15,
+        "tipo_ataque": "físico",
+        "descricao": "",
+        "prioridade": 1
+    },
+    {
+        "nome": "Soco de Pedra",
+        "tipo": "Terra",
+        "poder": 60,
+        "pp": 20,
+        "tipo_ataque": "físico",
+        "descricao": "",
+        "prioridade": 1
+    },
+    {
+        "nome": "Areia Movediça",
+        "tipo": "Terra",
+        "poder": "-",
+        "pp": 20,
+        "tipo_ataque": "status",
+        "descricao": "Diminui a velocidade do oponente",
+        "prioridade": 1
+    },
+    {
+        "nome": "Avalancha",
+        "tipo": "Terra",
+        "poder": 60,
+        "pp": 10,
+        "tipo_ataque": "físico",
+        "descricao": "",
+        "prioridade": 1
+    },
+    {
+        "nome": "Subsolo",
+        "tipo": "Terra",
+        "poder": "-",
+        "pp": 10,
+        "tipo_ataque": "status",
+        "descricao": "Aumenta defesa-especial",
+        "prioridade": 1
+    },
+    {
+        "nome": "Folha Navalha",
+        "tipo": "Planta",
+        "poder": 55,
+        "pp": 35,
+        "tipo_ataque": "físico",
+        "descricao": "Ataque físico rápido que causa dano do tipo grama.",
+        "prioridade": 1
+    },
+    {
+        "nome": "Raiz Raivosa",
+        "tipo": "Planta",
+        "poder": 70,
+        "pp": 20,
+        "tipo_ataque": "físico",
+        "descricao": "Ataque físico que causa dano do tipo grama e tem chance de diminuir a defesa especial do oponente.",
+        "prioridade": 1
+    },
+    {
+        "nome": "Cura",
+        "tipo": "Planta",
+        "poder": "-",
+        "pp": 20,
+        "tipo_ataque": "status",
+        "descricao": "Restaura HP",
+        "prioridade": 1
+    },
+    {
+        "nome": "Raio Solar",
+        "tipo": "Planta",
+        "poder": 90,
+        "pp": 10,
+        "tipo_ataque": "especial",
+        "descricao": "Um ataque especial poderoso que causa dano do tipo grama.",
+        "prioridade": 1
+    },
+    {
+        "nome": "Chicote de Cipó",
+        "tipo": "Planta",
+        "poder": 70,
+        "pp": 20,
+        "tipo_ataque": "físico",
+        "descricao": "Um ataque físico que impede o oponente de fugir.",
+        "prioridade": 1
+    },
+    {
+        "nome": "Gigantossuco",
+        "tipo": "Planta",
+        "poder": "-",
+        "pp": 20,
+        "tipo_ataque": "status",
+        "descricao": "Aumenta o ataque do usuário por um turno.",
+        "prioridade": 1
+    },
+    {
+        "nome": "Choque",
+        "tipo": "Elétrico",
+        "poder": 40,
+        "pp": 30,
+        "tipo_ataque": "físico",
+        "descricao": "Ataque básico que causa dano do tipo elétrico",
+        "prioridade": 1
+    },
+    {
+        "nome": "Trovão",
+        "tipo": "Elétrico",
+        "poder": 110,
+        "pp": 10,
+        "tipo_ataque": "especial",
+        "descricao": "Ataque especial poderoso que causa dano do tipo elétrico e tem chance de paralisar o oponente",
+        "prioridade": 1
+    },
+    {
+        "nome": "Descarga Elétrica",
+        "tipo": "Elétrico",
+        "poder": 80,
+        "pp": 20,
+        "tipo_ataque": "especial",
+        "descricao": "Ataque especial causa dano elétrico, diminui velocidade do oponente e reduz defesa do usuário",
+        "prioridade": 1
+    },
+    {
+        "nome": "Campo Elétrico",
+        "tipo": "Elétrico",
+        "poder": "-",
+        "pp": 20,
+        "tipo_ataque": "status",
+        "descricao": "Aumenta o ataque especial",
+        "prioridade": 1
+    },
+    {
+        "nome": "Choque",
+        "tipo": "Elétrico",
+        "poder": 40,
+        "pp": 30,
+        "tipo_ataque": "físico",
+        "descricao": "Ataque elétrico com 100% de prioridade",
+        "prioridade": 4
+    },
+    {
+    "nome": "Bola de Neve",
+    "tipo": "Gelo",
+    "poder": 40,
+    "pp": 25,
+    "tipo_ataque": "físico",
+    "descricao": "Ataque físico que causa dano do tipo gelo e tem chance de congelar o oponente",
+    "prioridade": 1
+    },
+    {
+        "nome": "Raio Gelo",
+        "tipo": "Gelo",
+        "poder": 90,
+        "pp": 10,
+        "tipo_ataque": "especial",
+        "descricao": "Ataque especial que causa dano do tipo gelo e tem chance de congelar o oponente",
+        "prioridade": 1
+    },
+    {
+        "nome": "Ventania Glacial",
+        "tipo": "Gelo",
+        "poder": 65,
+        "pp": 20,
+        "tipo_ataque": "especial",
+        "descricao": "Ataque especial que causa dano do tipo gelo a todos os inimigos e diminui a velocidade deles",
+        "prioridade": 1
+    },
+    {
+        "nome": "Blizzard",
+        "tipo": "Gelo",
+        "poder": 110,
+        "pp": 5,
+        "tipo_ataque": "especial",
+        "descricao": "Um ataque especial poderoso que causa dano do tipo gelo a todos os inimigos e tem chance de congelar os oponentes",
+        "prioridade": 1
+    },
+    {
+        "nome": "Espinho Gelo",
+        "tipo": "Gelo",
+        "poder": 0,
+        "pp": 15,
+        "tipo_ataque": "especial",
+        "descricao": "Devolve o dano recebido naquele turno",
+        "prioridade": 4
+    },
+    {
+        "nome": "Avalanche",
+        "tipo": "Gelo",
+        "poder": 60,
+        "pp": 10,
+        "tipo_ataque": "físico",
+        "descricao": "Um ataque físico que causa dano do tipo gelo e tem maior poder se o usuário estiver congelado",
+        "prioridade": 1
+    },
+    {
+        "nome": "Mordida",
+        "tipo": "Sombrio",
+        "poder": 60,
+        "pp": 25,
+        "tipo_ataque": "físico",
+        "descricao": "Ataque físico que causa dano do tipo Sombrio e tem chance de baixar a defesa do oponente",
+        "prioridade": 1
+    },
+    {
+        "nome": "Choro",
+        "tipo": "Sombrio",
+        "poder": 50,
+        "pp": 20,
+        "tipo_ataque": "especial",
+        "descricao": "Ataque especial que causa dano do tipo Sombrio e pode diminuir a defesa especial do oponente",
+        "prioridade": 1
+    },
+    {
+        "nome": "Assustar",
+        "tipo": "Sombrio",
+        "poder": "-",
+        "pp": 20,
+        "tipo_ataque": "status",
+        "descricao": "Diminui a força de vontade do oponente, tendo chance de assustar",
+        "prioridade": 1
+    },
+    {
+        "nome": "Puxar Alma",
+        "tipo": "Sombrio",
+        "poder": 40,
+        "pp": 20,
+        "tipo_ataque": "especial",
+        "descricao": "Um ataque especial que causa dano do tipo Sombrio e restaura HP do usuário",
+        "prioridade": 1
+    },
+    {
+        "nome": "Maldição",
+        "tipo": "Sombrio",
+        "poder": "-",
+        "pp": 10,
+        "tipo_ataque": "status",
+        "descricao": "Diminui status",
+        "prioridade": 1
+    },
+    {
+        "nome": "Sombras",
+        "tipo": "Sombrio",
+        "poder": 50,
+        "pp": 15,
+        "tipo_ataque": "especial",
+        "descricao": "Cria um clone sombrio do usuário que ataca o oponente",
+        "prioridade": 1
+    },
+    {
+        "nome": "Teleporte",
+        "tipo": "Psíquico",
+        "poder": "-",
+        "pp": 20,
+        "tipo_ataque": "status",
+        "descricao": "Aumenta velocidade",
+        "prioridade": 4
+    },
+    {
+        "nome": "Confusão",
+        "tipo": "Psíquico",
+        "poder": "-",
+        "pp": 20,
+        "tipo_ataque": "status",
+        "descricao": "Diminui a velocidade do oponente",
+        "prioridade": 1
+    },
+    {
+        "nome": "Dreno de Energia",
+        "tipo": "Psíquico",
+        "poder": 60,
+        "pp": 20,
+        "tipo_ataque": "especial",
+        "descricao": "Ataque especial que causa dano do tipo psíquico e restaura HP do usuário",
+        "prioridade": 1
+    },
+    {
+        "nome": "Troca",
+        "tipo": "Psíquico",
+        "poder": "-",
+        "pp": 20,
+        "tipo_ataque": "status",
+        "descricao": "Trocar ataque, defesa e velocidade com o oponente",
+        "prioridade": 1
+    },
+    {
+        "nome": "Barreira Psíquica",
+        "tipo": "Psíquico",
+        "poder": "-",
+        "pp": 20,
+        "tipo_ataque": "status",
+        "descricao": "Aumenta a defesa-espcial",
+        "prioridade": 1
+    },
+    {
+        "nome": "Reflexão",
+        "tipo": "Psíquico",
+        "poder": "-",
+        "pp": 20,
+        "tipo_ataque": "status",
+        "descricao": "Aumenta a defesa-espcial",
+        "prioridade": 4
+    },
+    {
+        "nome": "Raio Psíquico",
+        "tipo": "Psíquico",
+        "poder": 90,
+        "pp": 10,
+        "tipo_ataque": "especial",
+        "descricao": "Dano psíquico alto",
+        "prioridade": 1
+    }
+]
