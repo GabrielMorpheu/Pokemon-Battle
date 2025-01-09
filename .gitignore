@@ -1,2 +1,17 @@
 # created by virtualenv automatically
+# Diretórios de IDE
+.idea/
+
+# Arquivos compilados
+__pycache__/
+
+# Ambientes virtuais
+venv/
+
+# Arquivos temporários
+*.tmp
+*.swp
+
+# Logs
+logs/
 
