@@ -5,9 +5,6 @@
 # Arquivos compilados
 __pycache__/
 
-# Ambientes virtuais
-venv/
-
 # Arquivos temporários
 *.tmp
 *.swp
