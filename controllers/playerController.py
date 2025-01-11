@@ -25,7 +25,7 @@ class PlayerController:
         senha_criptografada = Criptografia.criptografar_senha(senha)
 
         caminho_player = os.getenv("CAMINHO_PLAYER",
-                                 "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\POKEMON\\data\players.json")
+                                 "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\Pokemon-Battle\\data\\players.json")
         try:
         # print(f"Carregando monstrinhos do arquivo {caminho_json}...")
             with open(caminho_player, "r", encoding="utf-8") as f:
@@ -46,12 +46,12 @@ class PlayerController:
 
         ##CRIA TIME
         caminho_time = os.getenv("CAMINHO_TIME",
-                                 "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\POKEMON\\data\\times.json")
+                                 "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\Pokemon-Battle\\data\\times.json")
 
 
         ##CRIA MOCHILA
         caminho_mochila = os.getenv("CAMINHO_PLAYER",
-                                    "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\POKEMON\\data\mochila.json")
+                                    "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\Pokemon-Battle\\data\mochila.json")
 
 
         criarPlayer = playerService

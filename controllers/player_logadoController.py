@@ -8,13 +8,13 @@ class Player_logadoController:
 
     def salvar_jogador_logado_controller(dados):
         caminho_jogador_logado = os.getenv("CAMINHO_PdLAYER",
-                                           "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\POKEMON\\data\player_logado.json")
+                                           "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\Pokemon-Battle\\data\player_logado.json")
 
         Player_logadoService.salvar_jogador_logadoService(dados, caminho_jogador_logado)
 
     def validar_jogador_logado():
         caminho_jogador_logado = os.getenv("CAMINHO_PdLAYER",
-                                           "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\POKEMON\\data\player_logado.json")
+                                           "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\Pokemon-Battle\\data\player_logado.json")
 
         return Player_logadoService.validar_jogador_logadoService(caminho_jogador_logado)
 

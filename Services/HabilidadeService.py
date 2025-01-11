@@ -4,7 +4,7 @@ from Models.Habilidade import Habilidade
 
 class HabilidadeService:
     def carregar_habilidades():
-        caminho_json = os.getenv("CAMINHO_HABILIDADES", "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\POKEMON\\data\\habilidade.json")
+        caminho_json = os.getenv("CAMINHO_HABILIDADES", "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\Pokemon-Battle\\data\\habilidade.json")
         try:
             # print(f"Carregando monstrinhos do arquivo {caminho_json}...")
             with open(caminho_json, "r", encoding="utf-8") as arquivo:

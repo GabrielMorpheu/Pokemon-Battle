@@ -12,7 +12,7 @@ class TimesController:
 
     def criar_novo_time(id_jogador, caminho_time):
         caminho_player = os.getenv("CAMINHO_TIME",
-                                 "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\POKEMON\\data\\players.json")
+                                 "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\Pokemon-Battle\\data\\players.json")
         ##CRIA JOGADOR
         # Carregar os dados existentes dos jogadores, times e mo
         monstrinho_ctrl = MonstrinhoController();
@@ -286,7 +286,7 @@ class TimesController:
         monstro_cntrl = MonstrinhoController()
         tamanho = monstro_cntrl.tamanho_monstrinho()
         caminho_monstro = os.getenv("CAMINHO_TIME",
-                                        "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\POKEMON\\data\\monstrinhos.json")
+                                        "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\Pokemon-Battle\\data\\monstrinhos.json")
         TimesServices.trocar_monstroService(caminho_time, id_time, id_jogador, posicao_monstro, caminho_monstro, tamanho)
 
     def obter_timeController(caminho_arquivo, id_time, id_jogador):

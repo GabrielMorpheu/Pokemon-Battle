@@ -6,7 +6,7 @@ import os
 class MochilaService:
     def carregar_mochilasServices():
         caminho_json = os.getenv("CAMINHO_TIMES",
-                                 "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\POKEMON\\data\\mochila.json")
+                                 "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\Pokemon-Battle\\data\\mochila.json")
         try:
             # print(f"Carregando monstrinhos do arquivo {caminho_json}...")
             with open(caminho_json, "r", encoding="utf-8") as arquivo:

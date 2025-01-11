@@ -8,7 +8,7 @@ import bcrypt
 class playerService:
     def carregar_players():
         caminho_json = os.getenv("CAMINHO_HABILIDADES",
-                                 "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\POKEMON\\data\players.json")
+                                 "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\Pokemon-Battle\\data\players.json")
         try:
             # print(f"Carregando monstrinhos do arquivo {caminho_json}...")
             with open(caminho_json, "r", encoding="utf-8") as arquivo:
@@ -58,7 +58,7 @@ class playerService:
 
     def validar(nome, senha):
         caminho_player = os.getenv("CAMINHO_PLAYER",
-                                   "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\POKEMON\\data\\players.json")
+                                   "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\Pokemon-Battle\\data\\players.json")
         try:
             with open(caminho_player, "r", encoding="utf-8") as f:
                 jogadores = json.load(f)

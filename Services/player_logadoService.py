@@ -5,7 +5,7 @@ from Models.player import Player
 class Player_logadoService:
     def carregar_player_logadoService():
         caminho_json = os.getenv("CAMINHO_HABILIDADES",
-                                 "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\POKEMON\\data\player_logado.json")
+                                 "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\Pokemon-Battle\\data\player_logado.json")
         try:
             # print(f"Carregando monstrinhos do arquivo {caminho_json}...")
             with open(caminho_json, "r", encoding="utf-8") as arquivo:

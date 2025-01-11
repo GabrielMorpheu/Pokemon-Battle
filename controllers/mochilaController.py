@@ -15,7 +15,7 @@ class MochilaController:
 
     def criar_nova_mochila(self, id_jogador, caminho_mochila):
         caminho_player = os.getenv("CAMINHO_TIME",
-                                  "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\POKEMON\\data\\players.json")
+                                  "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\Pokemon-Battle\\data\\players.json")
         item_ctrl = ItensController()
         print("Digite o nome da mochila:")
         nome_mochila = input()
@@ -183,7 +183,7 @@ class MochilaController:
         item_cntrl = ItensController()
         tamanho = item_cntrl.tamanho_itens()
         caminho_item = os.getenv("CAMINHO_TIME",
-                                    "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\POKEMON\\data\\itens.json")
+                                    "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\Pokemon-Battle\\data\\itens.json")
         TimesServices.trocar_monstroService(caminho_mochila, id_mochila, id_jogador, posicao_monstro, caminho_item, tamanho)
 
     def obter_mochilaController(caminho_arquivo, id_mochila, id_jogador):
