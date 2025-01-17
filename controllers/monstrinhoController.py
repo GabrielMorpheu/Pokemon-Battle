@@ -35,3 +35,4 @@ class MonstrinhoController:
                 return monstrinho
         print(f"Monstrinho '{nome_monstrinho}' não encontrado.")
         return None
+

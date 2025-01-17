@@ -32,3 +32,5 @@ class Player_logadoController:
     def get_player_logado():
         jogadores = Player_logadoService.carregar_player_logadoService()
         return jogadores
+
+
