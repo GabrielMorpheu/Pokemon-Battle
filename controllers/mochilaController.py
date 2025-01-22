@@ -8,14 +8,15 @@ import os
 from Models.itens import Item
 from controllers.player_logadoController import Player_logadoController
 from utils.Criptografia import Criptografia
+from utils.Caminho_base import Caminho
 
 class MochilaController:
     def __init__(self):
         self.mochilas = MochilaService.carregar_mochilasServices();
 
     def criar_nova_mochila(self, id_jogador, caminho_mochila):
-        caminho_player = os.getenv("CAMINHO_TIME",
-                                  "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\Pokemon-Battle\\data\\players.json")
+        caminho_raiz = Caminho.obterCaminho()
+        caminho_player = caminho_raiz / "data" / "players.json"
         item_ctrl = ItensController()
         print("Digite o nome da mochila:")
         nome_mochila = input()
@@ -89,7 +90,6 @@ class MochilaController:
         mochilas.append(nova_mochila)
         # Adiciona a nova mochila à lista
         mochilas.append(nova_mochila)
-        print(mochilas)
         MochilaService.criar_mochilaService(nova_mochila, caminho_mochila)
         playerService.adicionar_mochila_ao_jogador(caminho_player, id_mochila)
         return id_mochila
@@ -182,8 +182,8 @@ class MochilaController:
     def trocar_itemController(caminho_mochila, id_mochila, id_jogador, posicao_item):
         item_cntrl = ItensController()
         tamanho = item_cntrl.tamanho_itens()
-        caminho_item = os.getenv("CAMINHO_TIME",
-                                    "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\Pokemon-Battle\\data\\itens.json")
+        caminho_raiz
+        caminho_item = caminho_raiz / "data" / "itens.json"
         TimesServices.trocar_monstroService(caminho_mochila, id_mochila, id_jogador, posicao_monstro, caminho_item, tamanho)
 
     def obter_mochilaController(caminho_arquivo, id_mochila, id_jogador):

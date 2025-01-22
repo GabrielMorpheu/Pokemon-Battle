@@ -1,10 +1,12 @@
 import json
 import os
 from Models.itens import Item
+from utils.Caminho_base import Caminho
 
 class ItensService:
     def carregar_itens():
-        caminho_json = os.getenv("CAMINHO_HABILIDADES", "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\Pokemon-Battle\\data\itens.json")
+        caminho_raiz = Caminho.obterCaminho()
+        caminho_json = caminho_raiz / "data" / "itens.json"
         try:
             # print(f"Carregando monstrinhos do arquivo {caminho_json}...")
             with open(caminho_json, "r", encoding="utf-8") as arquivo:

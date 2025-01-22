@@ -2,11 +2,12 @@ import json
 from Models.Mochila import Mochila
 from controllers.itensController import ItensController
 import os
+from utils.Caminho_base import Caminho
 
 class MochilaService:
     def carregar_mochilasServices():
-        caminho_json = os.getenv("CAMINHO_TIMES",
-                                 "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\Pokemon-Battle\\data\\mochila.json")
+        caminho_raiz = Caminho.obterCaminho()
+        caminho_json = caminho_raiz / "data" / "mochila.json"
         try:
             # print(f"Carregando monstrinhos do arquivo {caminho_json}...")
             with open(caminho_json, "r", encoding="utf-8") as arquivo:

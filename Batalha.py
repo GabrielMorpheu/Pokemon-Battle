@@ -46,6 +46,8 @@ class Batalha_Main:
         ########0 É O VALOR PADRÃO, DEPOIS SERÃO MODIFICADOS POR INPUTS
         x1 = 0
         x2 = 0
+        mtr1 = 0
+        mtr2 = 0
         ########DERROTADOS É A VARIÁVEL QUE CONTA OS MONSTRINHOS DERRETADOS
         derrotados1 = 0
         derrotados2 = 0
@@ -77,11 +79,17 @@ class Batalha_Main:
         habilidade4_moonstro2 = habilidade_ctrl.selecionar_habilidade_nomeController(monstro_ativo_jogador2[1][3])
         ########LOOP SE MANTÉM ATIVO ATÉ QUE UM DOS TIMES NÃO TENHA MAIS MONSTRINHOS EM BATALHA
         while derrotados1 < 6  or derrotados2 < 6:
+            if hp1 <= 0:
+                derrotados1 += 1
+                x1 = 1
+            if hp2 <= 0:
+                derrotados2 += 1
+                x2 = 1
             if derrotados1 >= 6:
                 print(f"{player2.nome} VENCEU!!! Parabéns :)")
                 break
             if derrotados2 >= 6:
-                print(f"{player1.nomr} VENCEU!!! Parabéns :)")
+                print(f"{player1.nome} VENCEU!!! Parabéns :)")
                 break
             ########LÓGICA PARA ADICIONAR NOVO MONSTRINHO EM BATALHA APÓS UM ANTERIOR TER SIDO DERROTADO
             texto1 = f"Qual vai ser o próximo monstrinho que vai entrar em batalha: "
@@ -99,15 +107,15 @@ class Batalha_Main:
                     print(texto2)
                     print()
                     Batalha_Main.print_com_delay(texto1)
-                    x1 = int(input())
+                    mtr1 = int(input())
                     print()
-                    if 0 < x1 < 7:
-                        x1 -= 1
-                        if time1['monstrinhos'][x1][0][2] > 0:
-                            print("Monstro " + time1['monstrinhos'][x1][0][0] + " selecionado está na batalha")
+                    if 0 < mtr1 < 7:
+                        mtr1 -= 1
+                        if time1['monstrinhos'][mtr1][0][2] > 0:
+                            print("Monstro " + time1['monstrinhos'][mtr1][0][0] + " selecionado está na batalha")
                             x1 = 0
                             break
-                        elif time1['monstrinhos'][x1][0][2] <= 0:
+                        elif time1['monstrinhos'][mtr1][0][2] <= 0:
                             print("Não pode selecionar monstrinho, pois ele já foi derrotado, selecione outro")
                     else:
                         print("Selecione um monsstrinho válido.")
@@ -126,26 +134,26 @@ class Batalha_Main:
                     print(texto3)
                     print()
                     Batalha_Main.print_com_delay(texto1)
-                    x2 = int(input())
+                    mtr2 = int(input())
                     print()
-                    if 0 < x2 < 7:
-                        x2 -= 1
-                        if time2['monstrinhos'][x2][0][2] > 0:
-                            print("Monstro " + time2['monstrinhos'][x2][0][0] + " selecionado está na batalha")
+                    if 0 < mtr2 < 7:
+                        mtr2 -= 1
+                        if time2['monstrinhos'][mtr2][0][2] > 0:
+                            print("Monstro " + time2['monstrinhos'][mtr2][0][0] + " selecionado está na batalha")
                             x2 = 0
                             break
-                        elif time2['monstrinhos'][x2][0][2] <= 0:
+                        elif time2['monstrinhos'][mtr2][0][2] <= 0:
                             print("Não pode selecionar monstrinho, pois ele já foi derrotado, selecione outro")
                     else:
                         print("Selecione um monsstrinho válido.")
 
             ####TROCAR MONSTRO DE LUGAR PARA PRIMEIRA POSIÇÃO CASO NÃO SEJA A DO MONSTRO SELECIONADO:
-            if time1["monstrinhos"][x1] !=  time1['monstrinhos'][0]:
-                monstro_ativo_jogador1 = time1["monstrinhos"][x1]
+            if time1["monstrinhos"][mtr1] !=  time1['monstrinhos'][0]:
+                monstro_ativo_jogador1 = time1["monstrinhos"][mtr1]
                 nome_monstro_ativo1 = monstro_ativo_jogador1[0][0]
                 info_monstro1 = monstro_crtl.selecionar_monstrinho_por_nome(nome_monstro_ativo1)
                 tipo1, velocidade1, hp1, ataque_fisico1, defesa_fisica1, ataque_especial1 = Batalha_Main.info_monstro(info_monstro1)
-                novo_time1 = TimesController.trocar_posicao_batalhaController(time1, x1)
+                novo_time1 = TimesController.trocar_posicao_batalhaController(time1, mtr1)
                 if novo_time1:
                     time1 = novo_time1
                     print("TROCADO1")
@@ -155,12 +163,12 @@ class Batalha_Main:
             else:
                 print()
             ####TROCAR MONSTRO DE LUGAR PARA PRIMEIRA POSIÇÃO CASO NÃO SEJA A DO MONSTRO SELECIONADO:
-            if time2['monstrinhos'][x2] != time2['monstrinhos'][0]:
-                monstro_ativo_jogador2 = time2["monstrinhos"][x2]
+            if time2['monstrinhos'][mtr2] != time2['monstrinhos'][0]:
+                monstro_ativo_jogador2 = time2["monstrinhos"][mtr2]
                 nome_monstro_ativo2 = monstro_ativo_jogador2[0][0]
                 info_monstro2 = monstro_crtl.selecionar_monstrinho_por_nome(nome_monstro_ativo2)
                 tipo2, velocidade2, hp2, ataque_fisico2, defesa_fisica2, ataque_especial2 = Batalha_Main.info_monstro(info_monstro2)
-                novo_time2 = TimesController.trocar_posicao_batalhaController(time2, x2)
+                novo_time2 = TimesController.trocar_posicao_batalhaController(time2, mtr2)
                 if novo_time2:
                     time2 = novo_time2
                     print("TROCADO2")
@@ -168,12 +176,13 @@ class Batalha_Main:
                 else:
                     print("Não foi possível trocar2.")
             else:
-                print()
+                print(0)
+
             ########LOOP QUE SE MANTÉM ATÉ QUE UM DOS MONSTRINHOS SEJA DERROTADO
             while hp1 > 0 and hp2 > 0:
                 ########CASO ALGUM MONSTRO SEJA TROCADO NO TURNO A TROCA ACONTECE AQUI
                 if trocado1 == True:
-                    time1['monstrinhos'][0], time1['monstrinhos'][posicao1] = time1['monstrinhos'][
+                    time1['monstrinhos'][0], time1['monstrinhos'][mtr1] = time1['monstrinhos'][
                         posicao1], time1['monstrinhos'][0]
                     monstro_ativo_jogador1 = time1['monstrinhos'][0]
                     nome_monstro_ativo1 = monstro_ativo_jogador1[0][0]
@@ -182,7 +191,7 @@ class Batalha_Main:
                         info_monstro1)
                     trocado1 = False
                 if trocado2 == True:
-                    time2['monstrinhos'][0], time2['monstrinhos'][posicao2] = time2['monstrinhos'][
+                    time2['monstrinhos'][0], time2['monstrinhos'][mtr2] = time2['monstrinhos'][
                         posicao2], time2['monstrinhos'][0]
                     monstro_ativo_jogador2 = time2['monstrinhos'][0]
                     nome_monstro_ativo2 = monstro_ativo_jogador2[0][0]
@@ -438,20 +447,6 @@ class Batalha_Main:
                                                                           monstro_ativo_jogador2)
                                 hp1 = novo_hp1
                                 hp2 = novo_hp2
-                        print()
-                if hp1 <= 0:
-                    derrotados1 += 1
-                    x1 = 1
-                    break
-                if hp2 <= 0:
-                    derrotados2 += 1
-                    x2 = 1
-                    break
-
-        if derrotados1 == 6:
-            print(f"{player2.nome} VENCEU!!! Parabéns :)")
-        else:
-            print(f"{player1.nome} VENCEU!!! Parabéns :)")
 
     def menu_batalha_jogador1(self, monstro_ativo_jogador1, monstro_ativo_jogador2, info_monstro1, info_monstro2,
                               time1, time2, hp1, hp2, velocidade1, velocidade2, mochila1, mochila2, trocado1, trocado2, posicao1, posicao2):

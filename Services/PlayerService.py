@@ -3,12 +3,12 @@ import os
 from Models.player import Player
 from controllers.player_logadoController import Player_logadoController
 import bcrypt
-
+from utils.Caminho_base import Caminho
 
 class playerService:
     def carregar_players():
-        caminho_json = os.getenv("CAMINHO_HABILIDADES",
-                                 "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\Pokemon-Battle\\data\players.json")
+        caminho_raiz = Caminho.obterCaminho()
+        caminho_json = caminho_raiz / "data" / "players.json"
         try:
             # print(f"Carregando monstrinhos do arquivo {caminho_json}...")
             with open(caminho_json, "r", encoding="utf-8") as arquivo:
@@ -57,8 +57,8 @@ class playerService:
         return False
 
     def validar(nome, senha):
-        caminho_player = os.getenv("CAMINHO_PLAYER",
-                                   "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\Pokemon-Battle\\data\\players.json")
+        caminho_raiz = Caminho.obterCaminho()
+        caminho_player = caminho_raiz / "data" / "players.json"
         try:
             with open(caminho_player, "r", encoding="utf-8") as f:
                 jogadores = json.load(f)

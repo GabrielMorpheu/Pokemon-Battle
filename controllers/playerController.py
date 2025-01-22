@@ -9,6 +9,7 @@ from controllers.timesController import TimesController
 from controllers.mochilaController import MochilaController
 from Services.PlayerService import playerService
 from utils.Criptografia import Criptografia
+from utils.Caminho_base import Caminho
 
 class PlayerController:
     def __init__(self):
@@ -17,6 +18,7 @@ class PlayerController:
     def criar_novo_jogador_controller(novo):
         ##CRIA JOGADOR
         # Carregar os dados existentes dos jogadores, times e mochilas
+        caminho_raiz = Caminho.obterCaminho()
 
         print("Digite o nome do usuário: ")
         nome = input()
@@ -24,8 +26,7 @@ class PlayerController:
         senha = input()
         senha_criptografada = Criptografia.criptografar_senha(senha)
 
-        caminho_player = os.getenv("CAMINHO_PLAYER",
-                                 "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\Pokemon-Battle\\data\\players.json")
+        caminho_player = caminho_raiz / "data" / "players.json"
         try:
         # print(f"Carregando monstrinhos do arquivo {caminho_json}...")
             with open(caminho_player, "r", encoding="utf-8") as f:
@@ -45,13 +46,11 @@ class PlayerController:
 
 
         ##CRIA TIME
-        caminho_time = os.getenv("CAMINHO_TIME",
-                                 "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\Pokemon-Battle\\data\\times.json")
+        caminho_time = caminho_raiz / "data" / "times.json"
 
 
         ##CRIA MOCHILA
-        caminho_mochila = os.getenv("CAMINHO_PLAYER",
-                                    "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\Pokemon-Battle\\data\mochila.json")
+        caminho_mochila = caminho_raiz / "data" / "mochila.json"
 
 
         criarPlayer = playerService

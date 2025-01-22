@@ -3,11 +3,12 @@ import os
 from controllers.habilidadeController import HabilidadeController
 from controllers.monstrinhoController import MonstrinhoController
 from Models.Time import Time
+from utils.Caminho_base import Caminho
 
 class TimesServices:
     def carregar_times():
-        caminho_json = os.getenv("CAMINHO_TIMES",
-                                 "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\Pokemon-Battle\\data\\times.json")
+        caminho_raiz = Caminho.obterCaminho()
+        caminho_json = caminho_raiz / "data" / "times.json"
         try:
             # print(f"Carregando monstrinhos do arquivo {caminho_json}...")
             with open(caminho_json, "r", encoding="utf-8") as arquivo:

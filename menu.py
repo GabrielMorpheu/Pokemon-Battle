@@ -7,6 +7,7 @@ from controllers.playerController import PlayerController
 from controllers.player_logadoController import Player_logadoController
 from controllers.timesController import TimesController
 from Services.TimesService import TimesServices
+from utils.Caminho_base import Caminho
 from utils.Sair import Sair
 import controllers
 import os
@@ -65,10 +66,14 @@ class Menu:
         print()
 
     def menu_validar():
-        caminho_time = os.getenv("CAMINHO_TIME",
-                                 "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\Pokemon-Battle\\data\\times.json")
-        caminho_mochila = os.getenv("CAMINHO_TIME",
-                                 "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\Pokemon-Battle\\data\\mochila.json")
+        caminho_raiz = Caminho.obterCaminho()
+
+        caminho_time = caminho_raiz / "data" / "times.json"
+
+        caminho_mochila = caminho_raiz / "data" / "mochila.json"
+
+        caminho_habilidades = caminho_raiz / "data" / "habilidade.json"
+
         id_time = ""
         times = set()
         mochilas = set()
@@ -113,6 +118,9 @@ class Menu:
         Menu.print_com_delay(texto1)
 
     def menu_jogar(nome_player, id_player1, id_mochila1, id_time1, caminho_time, caminho_mochila):
+        caminho_raiz = Caminho.obterCaminho()
+        caminho_time = caminho_raiz / "data" / "times.json"
+        caminho_mochila = caminho_raiz / "data" / "mochila.json"
         player_ctrl = PlayerController()
         time_ctrl = TimesController
         texto0 = ("Seleciona uma das opções de batalha.")
@@ -241,8 +249,8 @@ class Menu:
                 break
 
     def menu_times():
-        caminho_time = os.getenv("CAMINHO_TIME",
-                                 "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\Pokemon-Battle\\data\\times.json")
+        caminho_raiz = Caminho.obterCaminho()
+        caminho_time = caminho_raiz / "data" / "times.json"
         jogador_cntrl = Player_logadoController
         times_cntrl = TimesController()
         jogadores = jogador_cntrl.get_player_logado()
@@ -305,8 +313,8 @@ class Menu:
                 break
 
     def submenu_times_edicao_geral(caminho_time, id_jogador, id_time, nome):
-        caminho_habilidades = os.getenv("CAMINHO_TIME",
-                                 "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\Pokemon-Battle\\data\\habilidade.json")
+        caminho_raiz = Caminho.obterCaminho()
+        caminho_habilidades = caminho_raiz / "data" / "habilidade.json"
         print("O que deseja editar? Caso queria voltar digite 0")
         opcoes = ("1. Editar nome do Time"
                   "\n2. Trocar habilidades do monstrinho"
@@ -370,8 +378,8 @@ class Menu:
             print("Digite uma opção válida...")
 
     def menu_mochilas():
-        caminho_mochila = os.getenv("CAMINHO_TIME",
-                                 "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\Pokemon-Battle\\data\\mochila.json")
+        caminho_raiz = Caminho.obterCaminho()
+        caminho_mochila = caminho_raiz / "data" / "mochila.json"
         jogador_cntrl = Player_logadoController
         mochilas_cntrl = MochilaController()
         jogadores = jogador_cntrl.get_player_logado()

@@ -1,11 +1,12 @@
 import json
 import os
 from Models.player import Player
+from utils.Caminho_base import Caminho
 
 class Player_logadoService:
     def carregar_player_logadoService():
-        caminho_json = os.getenv("CAMINHO_HABILIDADES",
-                                 "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\Pokemon-Battle\\data\player_logado.json")
+        caminho_raiz = Caminho.obterCaminho()
+        caminho_json = caminho_raiz / "data" / "player_logado.json"
         try:
             # print(f"Carregando monstrinhos do arquivo {caminho_json}...")
             with open(caminho_json, "r", encoding="utf-8") as arquivo:

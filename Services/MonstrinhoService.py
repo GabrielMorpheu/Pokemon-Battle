@@ -2,10 +2,12 @@ import json
 import os
 from Models.Monstrinho import Monstrinho
 from Models.Habilidade import Habilidade
+from utils.Caminho_base import Caminho
 
 class monstrinhoService:
     def carregar_monstrinhos():
-        caminho_json = os.getenv("CAMINHO_MONSTRINHOS", "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\Pokemon-Battle\\data\\monstrinhos.json")
+        caminho_raiz = Caminho.obterCaminho()
+        caminho_json = caminho_raiz / "data" / "monstrinhos.json"
         try:
             # print(f"Carregando monstrinhos do arquivo {caminho_json}...")
             with open(caminho_json, "r", encoding="utf-8") as arquivo:

@@ -1,4 +1,5 @@
 from Services.player_logadoService import Player_logadoService
+from utils.Caminho_base import Caminho
 import json
 import os
 
@@ -7,14 +8,14 @@ class Player_logadoController:
         self.player_logado = Player_logadoService.carregar_player_logadoService();
 
     def salvar_jogador_logado_controller(dados):
-        caminho_jogador_logado = os.getenv("CAMINHO_PdLAYER",
-                                           "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\Pokemon-Battle\\data\player_logado.json")
+        caminho_raiz = Caminho.obterCaminho()
+        caminho_jogador_logado = caminho_raiz / "data" / "player_logado.json"
 
         Player_logadoService.salvar_jogador_logadoService(dados, caminho_jogador_logado)
 
     def validar_jogador_logado():
-        caminho_jogador_logado = os.getenv("CAMINHO_PdLAYER",
-                                           "C:\\Users\\gabri\\PycharmProjects\\pythonProject\\Pokemon-Battle\\data\player_logado.json")
+        caminho_raiz = Caminho.obterCaminho()
+        caminho_jogador_logado = caminho_raiz / "data" / "player_logado.json"
 
         return Player_logadoService.validar_jogador_logadoService(caminho_jogador_logado)
 

@@ -20,7 +20,7 @@ class Multiplicador:
                 return None
         elif tipo_atacante == "Terra":
             tabela_terra = {
-                "Fogo": 2, "Água": 1, "Terra": 1, "Planta": 2, "Gelo": 1, "Elétrico": 0, "Sombra": 1, "Psíquico": 1
+                "Fogo": 2, "Água": 1, "Terra": 1, "Planta": 2, "Gelo": 1, "Elétrico": 2, "Sombra": 1, "Psíquico": 1
             }
             try:
                 return tabela_terra[tipo_defensor]
